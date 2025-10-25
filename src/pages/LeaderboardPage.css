@@ -1,0 +1,115 @@
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.leaderboard__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.leaderboard__toggle {
+  display: inline-flex;
+  padding: 0.2rem;
+  border-radius: 999px;
+  background: rgba(14, 10, 30, 0.9);
+  border: 1px solid rgba(54, 192, 255, 0.2);
+  gap: 0.2rem;
+}
+
+.leaderboard__toggle button {
+  border: none;
+  background: transparent;
+  color: var(--text-soft);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.leaderboard__toggle button.is-active {
+  background: linear-gradient(135deg, rgba(125, 87, 255, 0.35), rgba(54, 192, 255, 0.3));
+  color: #fff;
+}
+
+.leaderboard__list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.leaderboard__list li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-md);
+  background: rgba(15, 10, 28, 0.9);
+  border: 1px solid rgba(54, 192, 255, 0.2);
+}
+
+.leaderboard__rank {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  color: var(--accent-secondary);
+}
+
+.leaderboard__name {
+  font-weight: 600;
+}
+
+.leaderboard__xp {
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+
+.top-1 {
+  border-color: rgba(255, 200, 87, 0.6);
+  box-shadow: 0 0 20px rgba(255, 200, 87, 0.3);
+}
+
+.top-2 {
+  border-color: rgba(125, 87, 255, 0.45);
+}
+
+.top-3 {
+  border-color: rgba(54, 192, 255, 0.4);
+}
+
+.leaderboard__season-card {
+  background: linear-gradient(145deg, rgba(36, 18, 62, 0.95), rgba(14, 10, 28, 0.92));
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(125, 87, 255, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.leaderboard__season-card p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.leaderboard__season-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.leaderboard__season-card span {
+  font-size: 0.78rem;
+  color: var(--accent-secondary);
+}

@@ -1,0 +1,107 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home__quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.home__challenge-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.season-card {
+  background: linear-gradient(140deg, rgba(36, 18, 72, 0.95), rgba(14, 12, 32, 0.92));
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(125, 87, 255, 0.4);
+  box-shadow: 0 16px 32px rgba(20, 8, 44, 0.55);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.season-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.season-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.season-card__cta {
+  align-self: flex-start;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(54, 192, 255, 0.4);
+  text-decoration: none;
+  font-size: 0.78rem;
+  color: var(--accent-secondary);
+}
+
+.home__news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.home__news-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(54, 192, 255, 0.2);
+  background: linear-gradient(135deg, rgba(24, 16, 48, 0.95), rgba(12, 8, 26, 0.95));
+}
+
+.home__news-card header {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.home__news-card header img {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.home__news-card header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.home__news-card header p {
+  margin: 0.15rem 0 0;
+  font-size: 0.72rem;
+  color: var(--text-soft);
+}
+
+.home__news-card strong {
+  font-size: 0.9rem;
+}
+
+.home__news-card p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.home__news-card a {
+  margin-top: auto;
+  font-size: 0.78rem;
+  color: var(--accent-secondary);
+  text-decoration: none;
+}

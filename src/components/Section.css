@@ -1,0 +1,36 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.section__header h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.section__header p {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.section__action {
+  font-size: 0.75rem;
+  color: var(--accent-secondary);
+}
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

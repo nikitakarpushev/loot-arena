@@ -1,0 +1,35 @@
+.challenges {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.challenges__tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.challenges__tab {
+  padding: 0.65rem 0.8rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(54, 192, 255, 0.25);
+  background: rgba(15, 10, 28, 0.85);
+  color: var(--text-soft);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.challenges__tab--active {
+  border-color: rgba(125, 87, 255, 0.6);
+  color: #fff;
+  background: linear-gradient(135deg, rgba(125, 87, 255, 0.35), rgba(54, 192, 255, 0.3));
+}
+
+.challenges__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
