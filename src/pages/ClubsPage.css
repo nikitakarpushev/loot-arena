@@ -1,0 +1,70 @@
+.clubs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.clubs__favorites {
+  display: flex;
+  gap: 0.6rem;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+}
+
+.clubs__favorite-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(125, 87, 255, 0.35);
+  background: rgba(20, 12, 40, 0.85);
+  text-decoration: none;
+  color: inherit;
+}
+
+.clubs__favorite-pill img {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.clubs__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.clubs__filter {
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(54, 192, 255, 0.25);
+  background: rgba(15, 12, 30, 0.85);
+  color: var(--text-soft);
+  cursor: pointer;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.clubs__filter--active {
+  background: linear-gradient(135deg, rgba(125, 87, 255, 0.3), rgba(54, 192, 255, 0.25));
+  color: #fff;
+}
+
+.clubs__search {
+  flex: 1;
+  min-width: 160px;
+  padding: 0.55rem 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(54, 192, 255, 0.35);
+  background: rgba(12, 8, 28, 0.9);
+  color: var(--text-main);
+}
+
+.clubs__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}

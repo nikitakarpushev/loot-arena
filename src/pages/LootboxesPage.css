@@ -1,0 +1,133 @@
+.lootboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.lootboxes__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+.lootboxes__box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.9rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(54, 192, 255, 0.25);
+  background: rgba(15, 8, 30, 0.9);
+}
+
+.lootboxes__box header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.lootboxes__box header span {
+  font-weight: 600;
+}
+
+.lootboxes__box header small {
+  font-size: 0.72rem;
+  color: var(--text-soft);
+}
+
+.lootboxes__box button {
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(125, 87, 255, 0.4);
+  background: rgba(12, 6, 24, 0.9);
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+.lootboxes__box--rare {
+  border-color: rgba(125, 87, 255, 0.45);
+  box-shadow: 0 0 18px rgba(125, 87, 255, 0.2);
+}
+
+.lootboxes__box--legendary {
+  border-color: rgba(255, 200, 87, 0.55);
+  box-shadow: 0 0 22px rgba(255, 200, 87, 0.25);
+}
+
+.lootboxes__empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--text-soft);
+}
+
+.lootboxes__result {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0.9rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(54, 192, 255, 0.35);
+  background: rgba(15, 10, 32, 0.95);
+  animation: loot-glow 1.2s ease forwards;
+}
+
+.lootboxes__result span {
+  font-size: 1.6rem;
+}
+
+.lootboxes__result strong {
+  font-size: 0.95rem;
+}
+
+.lootboxes__result p {
+  margin: 0.25rem 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.lootboxes__result--rare {
+  border-color: rgba(125, 87, 255, 0.6);
+  box-shadow: 0 0 20px rgba(125, 87, 255, 0.35);
+}
+
+.lootboxes__result--legendary {
+  border-color: rgba(255, 200, 87, 0.75);
+  box-shadow: 0 0 24px rgba(255, 200, 87, 0.4);
+}
+
+.lootboxes__history {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.lootboxes__history-item {
+  padding: 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(54, 192, 255, 0.25);
+  background: rgba(15, 10, 28, 0.9);
+}
+
+.lootboxes__history-item header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.lootboxes__history-item ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+@keyframes loot-glow {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

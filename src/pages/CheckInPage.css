@@ -1,0 +1,148 @@
+.checkin {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.checkin__card {
+  background: linear-gradient(150deg, rgba(32, 18, 60, 0.95), rgba(14, 10, 30, 0.92));
+  border-radius: var(--radius-lg);
+  padding: 1.1rem;
+  border: 1px solid rgba(125, 87, 255, 0.35);
+  box-shadow: 0 18px 36px rgba(14, 4, 28, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checkin__card ol {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.checkin__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.checkin__button {
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(54, 192, 255, 0.3);
+  background: rgba(12, 8, 28, 0.9);
+  color: var(--text-main);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkin__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.checkin__status {
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--radius-md);
+  background: rgba(12, 8, 28, 0.8);
+  font-size: 0.8rem;
+}
+
+.checkin__status--verified,
+.checkin__status--complete {
+  background: linear-gradient(135deg, rgba(125, 87, 255, 0.2), rgba(54, 192, 255, 0.2));
+  color: #f5f6ff;
+}
+
+.checkin__radius {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+.checkin__radius-options {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.radius {
+  padding: 0.4rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(54, 192, 255, 0.25);
+  background: rgba(12, 8, 28, 0.8);
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.radius--active {
+  background: linear-gradient(135deg, rgba(125, 87, 255, 0.4), rgba(54, 192, 255, 0.35));
+  color: #fff;
+}
+
+.checkin__club-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.checkin__club-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(54, 192, 255, 0.25);
+  background: rgba(15, 8, 32, 0.92);
+}
+
+.checkin__club-card header {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.checkin__club-card header img {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.checkin__club-card header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.checkin__club-card header p {
+  margin: 0.15rem 0 0;
+  font-size: 0.72rem;
+  color: var(--text-soft);
+}
+
+.checkin__club-card p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.checkin__club-card span {
+  font-size: 0.75rem;
+  color: var(--accent-secondary);
+}
+
+.checkin__fraud-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
